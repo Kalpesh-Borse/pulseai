@@ -1,0 +1,11 @@
+item_id,text,source,submitted_at
+F001,"Memsy's vector search started timing out on every export over 10k records this week, and support hasn't replied to my ticket in 2 days.",support_ticket,2026-07-27
+F002,"We got double-charged on our July invoice — the annual plan fee AND the monthly fee both hit our card.",billing_form,2026-07-27
+F003,"Would love a way to set custom TTLs per memory namespace instead of one global expiry setting.",feature_survey,2026-07-27
+F004,"The new dashboard redesign is confusing — I can't find where to view API usage anymore, it used to be one click from the home screen.",app_review,2026-07-27
+F005,"The quickstart docs reference an SDK method (memsy.recall_v1) that no longer exists in the current package version.",docs_feedback,2026-07-27
+F006,"Our webhook integration with Memsy stopped firing after the last API version bump — no error, events just silently stop arriving.",integration_ticket,2026-07-27
+F007,"I got locked out of our workspace after an SSO provider change and support couldn't restore access for 6 hours. That's unacceptable for a paid plan.",support_ticket,2026-07-27
+F008,"Support responded to my critical outage ticket in under 10 minutes and fixed it live on the call. Genuinely impressed.",support_ticket,2026-07-27
+F009,"Mobile app crashes every time I try to sync memories while offline mode is on.",app_review,2026-07-27
+F010,"Really solid experience overall, the CLI tools especially make local dev testing painless.",app_review,2026-07-28

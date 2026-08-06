@@ -1,0 +1,21 @@
+item_id,text,submitted_at,expected_category,expected_sentiment,expected_urgency
+A01,"Deleted memories still show up in search results for about 10 minutes after deletion.",2026-07-27,bug_defect,negative,medium
+A02,"The delete API returns a success response but the record is still retrievable for several minutes afterward.",2026-07-27,bug_defect,negative,medium
+A03,"Export of our memory store keeps hanging at 90% and eventually times out on large datasets.",2026-07-27,performance,negative,high
+A04,"Search queries that used to return instantly now take several seconds since the update.",2026-07-27,performance,negative,medium
+A05,"We were double-charged this month, both the annual and monthly plan fees hit our card.",2026-07-27,billing,negative,medium
+A06,"The pricing page doesn't explain what counts as a memory unit, had to email sales to understand our bill.",2026-07-27,billing,negative,low
+A07,"Would love a way to set custom TTLs per memory namespace instead of one global expiry setting.",2026-07-27,feature_request,neutral,low
+A08,"Please add a bulk-delete API so we don't have to loop single deletes for GDPR erasure requests.",2026-07-27,feature_request,neutral,medium
+A09,"Since the redesign, the usage stats page is buried three menus deep. Please bring back the old nav item.",2026-07-27,ux_usability,negative,low
+A10,"Navigation got worse after the update, takes forever to find the API key page now.",2026-07-27,ux_usability,negative,medium
+A11,"The quickstart docs reference an SDK method that no longer exists in the current package version.",2026-07-27,documentation,negative,medium
+A12,"Docs for the Python SDK are out of date, the retrieve() example throws a deprecation warning not mentioned anywhere.",2026-07-27,documentation,negative,medium
+A13,"Our webhook integration stopped firing after the last API version bump, no error shown, events just stop arriving.",2026-07-27,integration_api,negative,high
+A14,"The REST API rate limit dropped without any changelog notice, now we get 429s constantly during peak hours.",2026-07-27,integration_api,negative,high
+A15,"Got locked out of our workspace after an SSO provider change, support couldn't restore access for 6 hours.",2026-07-27,account_access,negative,critical
+A16,"Two of my teammates lost admin access after we rotated our SSO certificate.",2026-07-27,account_access,negative,high
+A17,"Support responded to my critical outage ticket in under 10 minutes and fixed it live on the call. Genuinely impressed.",2026-07-27,support_experience,positive,low
+A18,"Support closed my ticket as resolved without actually fixing the underlying issue, had to reopen it twice.",2026-07-27,support_experience,negative,medium
+A19,"Really solid experience overall, the CLI tools especially make local dev testing painless.",2026-07-27,other,positive,low
+A20,"Just a neutral note, usage has been stable this week, no complaints and nothing exciting either.",2026-07-27,other,neutral,low

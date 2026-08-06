@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+chroma_db/
+*.db
+output/*.json
+output/*.md
+!output/.gitkeep
+.venv/
+venv/
+*.egg-info/
+.DS_Store

@@ -1,0 +1,25 @@
+item_id,text,source,submitted_at
+M01,"Export of our memory store keeps hanging at 90% and eventually times out on large datasets.",support_ticket,2026-07-06
+M02,"Third time this week our nightly export job has failed with a timeout.",support_ticket,2026-07-07
+M03,"Export timeout again today. This is blocking our data warehouse sync every single night now.",support_ticket,2026-07-08
+M04,"Search results have gotten noticeably slower since Monday, queries that used to be instant now take seconds.",app_review,2026-07-08
+M05,"Our integration is getting 429 rate limit errors constantly during peak hours this week.",integration_ticket,2026-07-09
+M06,"Support responded to my urgent ticket in minutes and walked me through a workaround. Really appreciated it.",support_ticket,2026-07-09
+M07,"Would be great to have per-namespace TTL configuration instead of one global expiry.",feature_survey,2026-07-10
+M08,"Mobile app crashes every time I try to sync while offline mode is on.",app_review,2026-07-10
+M09,"We were double-charged on this month's invoice — both the annual and monthly plan fees hit our card.",billing_form,2026-07-20
+M10,"Billing shows a duplicate charge for the same subscription period again, same as last time.",support_ticket,2026-07-21
+M11,"Requested a refund for an incorrect charge two weeks ago and still haven't heard back.",billing_form,2026-07-21
+M12,"The pricing page doesn't explain what counts as a 'memory unit,' had to email sales just to understand our bill.",billing_form,2026-07-22
+M13,"Onboarding was smooth this week, docs got our new engineer to a working prototype in under an hour.",app_review,2026-07-22
+M14,"Please add SAML support for enterprise SSO, our IT team requires it for renewal.",feature_survey,2026-07-23
+M15,"Docs for the Python SDK are still out of date, the retrieve() example throws a deprecation warning.",docs_feedback,2026-07-23
+M16,"Got locked out of our workspace after an SSO change, support couldn't restore access for hours. Unacceptable for a paid plan.",support_ticket,2026-07-24
+M17,"Really love the new dashboard redesign, so much easier to find what I need now.",app_review,2026-08-03
+M18,"The CLI tools make local dev testing painless, best part of the whole platform for us.",app_review,2026-08-04
+M19,"Please add a bulk-delete API so we don't have to loop single deletes for GDPR erasure requests.",feature_survey,2026-08-04
+M20,"Would like audit logs for who accessed which memory records, needed for our SOC2 review.",feature_survey,2026-08-05
+M21,"Support fixed my issue live on a call in under ten minutes today. Genuinely impressed every time.",support_ticket,2026-08-05
+M22,"Just a neutral note, usage has been stable this week, no complaints and nothing exciting either.",app_review,2026-08-06
+M23,"Minor gripe: the API key page is still one click too deep in the new navigation.",app_review,2026-08-06
+M24,"The webinar on retrieval strategies this week was excellent, the team clearly knows the space well.",app_review,2026-08-07

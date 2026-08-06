@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PulseAI — Weekly Feedback Insights</title>
+<link rel="stylesheet" href="style.css?v=4">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>PulseAI</h1>
+      <p class="subtitle">Weekly customer feedback insight dashboard for Memsy</p>
+    </div>
+    <div class="upload-controls">
+      <input type="file" id="csv-input" accept=".csv" />
+      <button id="process-btn">Process Batch</button>
+    </div>
+  </header>
+
+  <div class="week-picker" id="week-picker">
+    <span class="week-picker-label">Browse by week:</span>
+    <select id="month-select">
+      <option value="">No stored weeks yet</option>
+    </select>
+    <div class="week-buttons" id="week-buttons"></div>
+    <button id="latest-upload-btn" class="link-btn hidden">&larr; Back to latest upload</button>
+  </div>
+
+  <div id="status-banner" class="status-banner hidden"></div>
+
+  <main>
+    <section class="summary-panel" id="summary-panel">
+      <h2 id="summary-headline">No batch processed yet</h2>
+      <p class="empty-hint">Upload a feedback CSV (columns: <code>item_id,text</code>, optional
+        <code>source</code>, <code>submitted_at</code>) and click "Process Batch" to see this
+        week's insights.</p>
+      <div class="summary-columns hidden" id="summary-columns">
+        <div>
+          <h3>Key Findings</h3>
+          <ul id="key-findings"></ul>
+        </div>
+        <div>
+          <h3>Recommended Actions</h3>
+          <ul id="recommended-actions"></ul>
+        </div>
+      </div>
+      <p id="narrative-text" class="narrative"></p>
+    </section>
+
+    <section class="charts-grid">
+      <div class="chart-card">
+        <h3>Feedback by Category</h3>
+        <p class="chart-caption">How many feedback items fall into each category this week</p>
+        <canvas id="category-chart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Sentiment Distribution</h3>
+        <p class="chart-caption">Share of positive, neutral, and negative feedback</p>
+        <canvas id="sentiment-chart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Urgency Breakdown</h3>
+        <p class="chart-caption">How many items fall into each urgency level</p>
+        <canvas id="urgency-chart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Top Recurring Themes</h3>
+        <p class="chart-caption">Most common specific issues, clustered across items</p>
+        <canvas id="themes-chart"></canvas>
+      </div>
+    </section>
+
+    <section class="table-card">
+      <h3>Per-Item Classification</h3>
+      <p class="chart-caption">Every processed feedback item with its full classification — for spot-checking individual results</p>
+      <div class="table-scroll">
+        <table id="items-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Feedback</th>
+              <th>Category</th>
+              <th>Theme(s)</th>
+              <th>Sentiment</th>
+              <th>Score</th>
+              <th>Urgency</th>
+            </tr>
+          </thead>
+          <tbody id="items-table-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <div id="feedback-modal" class="modal-overlay hidden">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modal-item-id"></h3>
+        <button id="modal-close-btn" aria-label="Close">&times;</button>
+      </div>
+      <p id="modal-item-text" class="modal-text"></p>
+    </div>
+  </div>
+
+  <script src="app.js?v=4"></script>
+</body>
+</html>
