@@ -120,5 +120,3 @@ pulseai/
   hand-labeled ground-truth set
 - [`docs/consistency_report.md`](docs/consistency_report.md) — real same-input-twice consistency
   test, 5 minutes apart
-- [`docs/taxonomy_proposal.md`](docs/taxonomy_proposal.md) — draft taxonomy + open questions for
-  the mentor review (mission step 1) — not yet finalized
