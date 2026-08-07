@@ -84,10 +84,6 @@ python -m scripts.evaluate_accuracy      # 20 hand-labeled items -> docs/accurac
 python -m scripts.test_consistency       # same items classified twice, 5 min apart -> docs/consistency_report.md (takes ~6 minutes)
 ```
 
-Latest real results: **95% category / 100% sentiment / 85% urgency accuracy**, and **100% of
-enum-constrained fields (category/sentiment/urgency) stable** across a 5-minute-apart rerun —
-see the generated reports for the full breakdown and analysis of every miss.
-
 ## Project structure
 
 ```
